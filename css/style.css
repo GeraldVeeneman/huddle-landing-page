@@ -24,13 +24,13 @@ html {
 
 /* Layout */
 body {
-  width: 100vw;
-  min-height: 100vh;
   align-items: center;
   display: flex;
   flex-direction: column;
   background-color: var(--violet);
   background-image: url(../images/bg-mobile.svg);
+  background-position: top center;
+  background-size: contain;
   background-repeat: no-repeat;
   font-family: "Open Sans";
   font-size: 1.6rem;
@@ -39,6 +39,8 @@ body {
 @media only screen and (min-width: 1292px) {
   body {
     background-image: url(../images/bg-desktop.svg);
+    background-position: top left;
+    background-size: initial;
     padding: 5rem;
     display: grid;
     grid-template-rows: auto auto auto;
